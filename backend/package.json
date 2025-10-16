@@ -1,0 +1,30 @@
+{
+  "name": "srida-backend",
+  "version": "1.0.0",
+  "description": "Backend API for SRIDA Event Management Platform",
+  "main": "server.js",
+  "scripts": {
+    "win:start": "node server.js",
+    "win:dev": "nodemon server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "dev:win": "set NODE_ENV=development && nodemon server.js",
+    "start:win": "set NODE_ENV=production && node server.js",
+    "dev:simple": "nodemon server.js",
+    "test": "jest"
+  },
+  "keywords": ["event-management", "booking", "api", "nodejs"],
+  "author": "SRIDA Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
